@@ -130,13 +130,22 @@ for r = 1:Nsims                      % TO HAVE MULTIPLE SAMPLES
             C_ne = find(A2(j,:)~=A2_old(j,:));
              if length(C_ne) > 1 %% if more than 1 events happened
                 for k = 1:length(C_ne) %% Parse all the mutation events
+%                     C_ne
+%                     length(C_ne)
                     C_ne_dist = abs(C_ne - C_ne(k)); 
                     idx = find((0< C_ne_dist) & (C_ne_dist < 20)); 
                     if ~isempty(idx) %% the distance of mutation is less than 20
+%                         idx
+%                         k
+%                         C_ne_dist
+%                         return
                         for l = 1:length(idx)
                             if idx(l) > k
+%                                 C_ne(k)
+%                                 C_ne(idx(l))
+%                                 return
                                 % assign to the targets inbetween the state 200 
-                                A2(j,k+1:idx(l)-1) = 200;
+                                A2(j,C_ne(k)+1:C_ne(idx(l))-1) = 200;
                             end
                         end
                     end

@@ -109,13 +109,13 @@ Nmer_prob = sort(rvs);
                             for l = 1:length(idx)
                                 if idx(l) > k
                                     % assign to the targets inbetween the state 200 
-                                    A2(j,k+1:idx(l)-1) = 200;
+                                    A2(j,C_ne(k)+1:C_ne(idx(l))-1) = 200;
                                 end
                             end
                         end
                     end
                  end
-            end      
+            end       
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             % make the daughter matrix the mother matrix for the next iteration
             A1 = A2;

@@ -19,3 +19,6 @@ toc
 % 1500 trees
 % i = 31:45, sample = 100
 % Elapsed time is 53052.976094 seconds.
+
+% i = 46:71, sample = 100
+% Elapsed time is 1287.060170 seconds.
