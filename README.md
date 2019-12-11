@@ -1,4 +1,5 @@
 # Learning the "Game" of Life
+> Reconstruction of Cell Lineages Through CRISPR-induced DNA Mutations
 
 "The recent advent of new CRISPR-based molecular tools allows the reconstruction of cell lineages based on the phylogenetical analysis of DNA mutations induced by CRISPR during development and promises to solve the lineage of complex model organisms at single-cell resolution (see image from McKenna et al Science 2016).
 
