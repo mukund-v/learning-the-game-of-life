@@ -29,6 +29,7 @@
 
 Dataset-1 contains 1 linage tree with 16 cell divisions, i.e. there are 65536 cells. Based on this linage tree, there are 10 difference possible cell sequencing data simulated. Generate one sequencing data cost < 3 mins so far.
 
-### dataset-2
+## TODO
 
-Dataset-2 contains 1 linage tree with 10 cell divisions, i.e. there are 1024 cells. Based on this linage tree, there are 2500 difference possible cell sequencing data simulated. 
+- Subset the linage tree to 1000 cells. Based on the paper, ideally 1000 cell should be able to reconstruct linage tree.
+- Improve the matlab script for parallel simulating.
