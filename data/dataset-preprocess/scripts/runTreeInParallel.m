@@ -1,7 +1,7 @@
 tic
 M = 12;
-parfor (i = 46:71, M)
-    treeGenerationParallel(i,100)
+parfor (i = 72:77, M)
+    treeGenerationParallel(i,500)
 end
 toc
 
@@ -22,3 +22,6 @@ toc
 
 % i = 46:71, sample = 100
 % Elapsed time is 1287.060170 seconds.
+
+% i = 72:77, sample = 500
+% Elapsed time is 185.511309 seconds.

@@ -13,10 +13,13 @@ rng(rnd_seed);
 %-------------------------------------------------------------------------
 % cells divisions
 % Ndiv = 16;
-Ndiv = 10;
+% Ndiv = 10;
+Ndiv = 7;
+
 %Matrix of cell division times
 CellDiv_Time = zeros(Ndiv,1);
-CellDiv_Time(1:13) = 0:10:120;  % First 13 cell divisions are every 10 mins
+CellDiv_Time(1:13) = 0:60:720;  % First 13 cell divisions are every 10 mins
+% CellDiv_Time(1:13) = 0:10:120;  % First 13 cell divisions are every 10 mins
 CellDiv_Time(13:16) = 120:160:600; %Last 3 divisions are every 160 mins
 CellDiv_Time(17) = 1440;  % end of Embryonic development
 
