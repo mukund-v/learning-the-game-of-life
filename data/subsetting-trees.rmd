@@ -5,13 +5,15 @@ output: html_notebook
 
 ```{r}
 library(ape)
-ref_tree = read_tree(file='/home/derek/studyAboard/2019fall/ESE546/project/learning-the-game-of-life/data/dataset-3/ref-trees/7div_200_targets_30_states_REF_trim_n.nw',
+library(castor)
+ref_tree = read_tree(file='/home/derek/studyAboard/2019fall/ESE546/project/learning-the-game-of-life/data/dataset-3/ref-trees/07div_200_targets_30_states_REF_trim_n.nw',
                      include_edge_lengths=FALSE,
                      check_label_uniqueness=TRUE)
-ref_tree$edge.length <- c(rep(1, 2046))
+ref_tree$edge.length <- c(rep(1, 254))
 dist_matrix <- cophenetic.phylo(ref_tree)
 dist_matrix
-# write.csv(dist_matrix, file = '/home/derek/studyAboard/2019fall/ESE546/project/learning-the-game-of-life/data/dataset-2/ref-trees/pairwise-dist.csv')
+write.csv(dist_matrix, file =
+'/home/derek/studyAboard/2019fall/ESE546/project/learning-the-game-of-life/data/dataset-3/ref-trees/pairwise-dist.csv')
 ```
 
 ```{r}
